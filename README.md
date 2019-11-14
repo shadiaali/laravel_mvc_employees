@@ -3,7 +3,7 @@ An employees website with add, edit and delete employees built with Laravel and 
 
 ## Setup
 1. Start ```MAMP/WAMP``` servers
-2. In ```phpMyAdmin``` create a new database called ```db_mvc``. 
+2. In ```phpMyAdmin``` create a new database called ```db_mvc```. 
 3. ```cd``` to ```htdocs/laravel_mvc_employees``` 
 4. Install the node modules. Run ```npm i``` within the folder directory.
 5. Install composer. Run ```composer install``` within the folder directory. 
