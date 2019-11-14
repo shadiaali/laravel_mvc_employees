@@ -20,7 +20,7 @@ Route::get('/', function () {
 //if the route is triggered than the 'index' of the employee controller will be called
 Route::get('employees','EmployeeController@index')->name('employee.index');
 // the id parameter is essential to selecting a specific resource
-Route::get('employees/{id}/details','EmployeeController@details')->name('employee.edit');
+Route::get('employees/{id}/details','EmployeeController@details')->name('employee.details');
 Route::get('employees/{id}/edit','EmployeeController@edit')->name('employee.edit');
 Route::get('employees/{id}/delete','EmployeeController@destroy')->name('employee.destroy');
 Route::get('employees/create','EmployeeController@create')->name('employee.create');

@@ -6,6 +6,7 @@
     <form action="{{route('employee.update')}}" method = "post">
         @csrf
 
+        <input type="hidden" name="thumbnail" value = "{{$employee->thumbnail}}">
         <input type="hidden" name="headshot" value = "{{$employee->headshot}}">
         <div class="form-group">
         <label for="firstname">Firstname:</label>
