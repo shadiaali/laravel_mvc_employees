@@ -6,6 +6,10 @@
     <form action="{{route('employee.store')}}" method = "post">
         @csrf
         <div class="form-group">
+            <label for="headshot">thumbnail:</label>
+            <input type="text" name = "thumbnail" id = "thumbnail" class="form-control" required>
+            </div>
+        <div class="form-group">
             <label for="headshot">headshot:</label>
             <input type="text" name = "headshot" id = "headshot" class="form-control" required>
             </div>

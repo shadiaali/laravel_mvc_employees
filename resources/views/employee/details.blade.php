@@ -5,7 +5,8 @@
     <div class="col-sm-8 offset-sm-2">
         <tr class = "text-center">
             <td>{{ $employee->id }}</td>
-            <td>{{ $employee->headshot }}</td>
+
+            <td><img src="{{ URL::to('/') }}/images/{{ $employee->headshot }}"></td>
             <td>{{ $employee->firstname }}</td>
 
             <td>{{ $employee->lastname }}</td>
