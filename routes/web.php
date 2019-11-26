@@ -24,6 +24,7 @@ Route::get('employees/{id}/details','EmployeeController@details')->name('employe
 Route::get('employees/{id}/edit','EmployeeController@edit')->name('employee.edit');
 Route::get('employees/{id}/delete','EmployeeController@destroy')->name('employee.destroy');
 Route::get('employees/create','EmployeeController@create')->name('employee.create');
+Route::get('employees/search', 'EmployeeController@search')->name('employee.search');
 
 //POST request routes
 Route::post('employees/create','EmployeeController@store')->name('employee.store');
