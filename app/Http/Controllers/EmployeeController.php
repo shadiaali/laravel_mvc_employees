@@ -83,4 +83,18 @@ class EmployeeController extends Controller
         $employee->delete();
         return redirect()->route('employee.index');
     }
+
+    public function search(Request $request)
+    {
+        $str = $request->input('str');
+
+        $result = Employee::where('firstname', 'LIKE', "%$str%")
+            ->orWhere('lastname', 'LIKE', "%$str%")
+            ->get();
+
+        return response()->json($result);
+
+        
+    }
+
 }
