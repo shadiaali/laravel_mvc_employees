@@ -1,5 +1,12 @@
 # laravel_mvc_employees
-An employees website with add, edit and delete employees built with Laravel and blade templating	An employees website with add, edit and delete employees built with Laravel and blade templating
+An employees website with add, edit and delete employees built with Laravel and blade templating. 
+
+### Features
+- Add New Employee
+- Edit Employee
+- Delete Employee
+- Ajax Employee Search 
+- Individual Employee Details Pages
 
 ## Setup
 1. Start ```MAMP/WAMP``` servers
@@ -11,3 +18,4 @@ An employees website with add, edit and delete employees built with Laravel and 
 7. Seed the database with dummy info. Run ```php artisan db:seed``` within the folder directory.
 8. Serve the project. Run ```php artisan serve``` within the folder directory. 
 9. The project should be served on ```http://127.0.0.1:8000/employees```
+
