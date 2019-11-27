@@ -2,15 +2,14 @@
 @section('title','Employees Index')
 @section('content')
 
-<body style="background-color: #ffffff;
-background-image: url('https://www.transparenttextures.com/patterns/gplay.png');">
+<body>
 
-<div class="jumbotron card card-image mt-4" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+<div class="jumbotron card card-image mt-4 rare-wind-gradient">
 <div class="text-white text-center py-5 px-4">
 
-    <h1 class="display-1 card-title h1-responsive pt-3 mb-5 font-bold"><strong>MVC Employees</strong></h1>
-
-    <a href="employees/create" class="btn btn-outline-white btn-md"><i class="fas fa-plus left"></i> Create New Employee</a>
+    <h1 class="display-4 font-bold">MVC Employees</h1>
+<br>
+    <a href="employees/create" class="btn spring-warmth-gradient btn-lg"><i class="fas fa-plus left"></i> Create New Employee</a>
 
     @include('partials.search')
 
@@ -25,11 +24,11 @@ background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
 <table class="table table-striped table-responsive-md btn-table">
                 <thead>
                     <tr>
-                        <th scope="row">Headshot</th>
-                        <th scope="row">Full Name</th>
-                        <th scope="row">Department</th>
-                        <th scope="row">Details</th>
-                        <th scope="row">Edit/Delete</th>
+                        <th scope="row"><h4>Headshot</h4></th>
+                        <th scope="row"><h4>Full Name</h4></th>
+                        <th scope="row"><h4>Department</h4></th>
+                        <th scope="row"><h4>Details</h4></th>
+                        <th scope="row"><h4>Edit/Delete</h4></th>
 
                     </tr>
                 </thead>
@@ -52,14 +51,14 @@ background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
                         </td>
 
                         <td class="wow fadeIn"><a href="{{route('employee.details',['id'=>$employee->id])}}"
-                                class="btn btn-info btn-block">Details</a></td>
+                                class=" btn btn-light  ">Details</a></td>
 
 
                         <td class="wow fadeIn"><a href="{{route('employee.edit',['id'=>$employee->id])}}"
-                                class="btn btn-info btn-sm">Edit</a>
+                                class="text-white btn winter-neva-gradient btn-sm">Edit</a>
 
                             <a href="{{route('employee.destroy',['id'=>$employee->id])}}"
-                                class="btn btn-danger btn-sm">Delete</a></td>
+                                class="text-white btn btn-danger btn-sm">Delete</a></td>
 
                     </tr>
                 @endforeach
